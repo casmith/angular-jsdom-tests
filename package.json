@@ -1,0 +1,36 @@
+{
+  "name": "angular-jsdom-tests",
+  "version": "1.0.0",
+  "description": "Sample application showing how jsdom can be used as a browser for running tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node tasks/build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-mocks": "^1.5.8",
+    "browserify": "^13.1.0",
+    "browserify-shim": "^3.8.12",
+    "http-server": "^0.9.0",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.2.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-jsdom-launcher": "^4.0.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.8"
+  },
+  "browserify-shim": {
+    "angular": {
+      "exports": "angular"
+    },
+    "angular-mocks": {
+      "depends": [
+        "angular"
+      ]
+    }
+  }
+}

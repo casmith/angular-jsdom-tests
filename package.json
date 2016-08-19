@@ -4,7 +4,7 @@
   "description": "Sample application showing how jsdom can be used as a browser for running tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "karma start",
     "build": "node tasks/build.js"
   },
   "author": "",
@@ -17,8 +17,10 @@
     "jasmine": "^2.4.1",
     "jasmine-core": "^2.4.1",
     "karma": "^1.2.0",
+    "karma-browserify": "^5.1.0",
     "karma-jasmine": "^1.0.2",
-    "karma-jsdom-launcher": "^4.0.0"
+    "karma-jsdom-launcher": "^4.0.0",
+    "watchify": "^3.7.0"
   },
   "dependencies": {
     "angular": "^1.5.8"
